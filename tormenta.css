@@ -1,0 +1,148 @@
+/* Importamos una fuente estilo libro desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+
+/* Reset básico */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Fondo de toda la página */
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+
+    background-color: #c9c0ae;
+
+    font-family: "Crimson Text", Georgia, serif;
+    color: #2f2923;
+}
+
+
+/* La página del libro */
+
+.book-page {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 70px 90px;
+
+    background-color: #f4ecd8;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25),
+        inset 0 0 40px rgba(120, 90, 50, 0.05);
+
+    min-height: 90vh;
+}
+
+
+/* Título */
+
+.book-page h1 {
+    font-family: "Playfair Display", Georgia, serif;
+
+    text-align: center;
+
+    font-size: 2.5rem;
+
+    font-weight: 600;
+
+    margin-bottom: 60px;
+
+    color: #3a2d23;
+}
+
+
+/* Subtítulos */
+
+.book-page h2 {
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 1.8rem;
+
+    margin-top: 50px;
+
+    margin-bottom: 20px;
+
+    color: #4a382a;
+}
+
+
+/* Párrafos */
+
+.book-page p {
+    font-size: 1.3rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+
+    text-align: justify;
+}
+
+
+/* Primera letra de cada capítulo */
+
+.book-page .first-letter::first-letter {
+    font-size: 4rem;
+
+    font-weight: bold;
+
+    float: left;
+
+    line-height: 0.8;
+
+    margin-right: 10px;
+
+    margin-top: 8px;
+
+    color: #6b4f3b;
+}
+
+.book-page .last-line::last-line {
+    font-size: 4px;
+}
+
+/* Separador decorativo */
+
+.book-page hr {
+    border: none;
+
+    border-top: 1px solid #b8a88d;
+
+    width: 40%;
+
+    margin: 50px auto;
+}
+
+
+/* Adaptación para móviles */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .book-page {
+        padding: 40px 25px;
+    }
+
+    .book-page h1 {
+        font-size: 2rem;
+    }
+
+    .book-page p {
+        font-size: 1.15rem;
+
+        line-height: 1.7;
+
+        text-align: left;
+    }
+
+}
